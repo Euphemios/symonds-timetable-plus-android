@@ -80,7 +80,7 @@ public class LoginScreen extends ActionBarActivity {
         if (C.moveToFirst()) {
             viewstate = 1;
             do {
-                String formatDate = C.getString(3).split("to ")[1];
+                String formatDate = C.getString(3).split("to ")[0];
                 Log.e("myapp", formatDate);
                 Calendar endDate = Calendar.getInstance();
                 Calendar todaysDate = Calendar.getInstance();
