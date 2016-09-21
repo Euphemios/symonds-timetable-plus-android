@@ -611,7 +611,7 @@ public class Timetable extends ActionBarActivity {
         Elements h3 = div.select("h3");
         String fullTitle = h3.text();
         String[] splits = fullTitle.split("(?=\\b[0-9])", 2);
-        String date = splits[1];
+        String date = splits[0];
         return date;
     }
 
